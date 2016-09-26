@@ -8,5 +8,5 @@ class Person {
     } 
 } 
 Person me=new Person(); 
-me.setWeight((float)65.7); 
+me.setWeight((float)60.0); 
 System.out.println(me.getWeight()); 
