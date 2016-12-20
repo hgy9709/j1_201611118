@@ -1,18 +1,21 @@
-public class Player { 
-    private String name=null; 
-    int num=0; 
-    public Player(String _name) { 
-        name=_name; 
-    } 
-    public void play() { 
-        dice d=new dice(); 
-        d.roll();
-        num=d.getNum(); 
-    } 
-    public String getName() { 
-        return this.name; 
-    } 
-    public int getNum() { 
-        return this.num; 
-    } 
-} 
+package com.sd.yutgame;
+
+public class Player {
+	private String name = null;
+	private int num = 0;
+	public Player(String name) {
+		this.name = name;
+	}
+	public void play() {
+		Dice d = new Dice();
+		d.roll();
+		num = d.getNum();
+	}
+	public int getNum() {
+		return num;
+	}
+	public String getName() {
+		return name;
+	}
+}
+	
